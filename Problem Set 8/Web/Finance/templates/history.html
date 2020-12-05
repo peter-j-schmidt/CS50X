@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% if stocks|length < 1 %}
+
+            {% else %}
+
+                {% for dictionary in stocks %}
+
+                    <tr>
+                        <td>{{ dictionary['stock_symbol']|upper }}</td>
+                        <td>{{ dictionary['shares'] }}</td>
+                        <td>${{ dictionary['price'] }}</td>
+                        <td>{{ dictionary['timestamp'] }}</td>
+                    </tr>
+
+                {% endfor %}
+
+            {% endif %}
+
+        </tbody>
+    </table>
+{% endblock %}

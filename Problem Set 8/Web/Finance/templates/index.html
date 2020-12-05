@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% if stocks|length < 1 %}
+
+            {% else %}
+
+                {% for stock_symbol, stock_name, total_share, current_price, current_total in stock_info %}
+
+                    <tr>
+                        <td>{{ stock_symbol|upper }}</td>
+                        <td>{{ stock_name }}</td>
+                        <td>{{ total_share }}</td>
+                        <td>{{ current_price }}</td>
+                        <td>{{ current_total }}</td>
+                    </tr>
+
+                {% endfor %}
+
+            {% endif %}
+
+            <tr>
+                <td colspan="4">CASH</td>
+                <td>
+                    {{ cash }}
+                </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td>{{ total_value }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

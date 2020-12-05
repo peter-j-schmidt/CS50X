@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Favorites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <!-- nav bar in header -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Peter Schmidt</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <!-- HTML Pages -->
+                    <a class="nav-item nav-link" href="programming.html">Programming</a>
+                    <a class="nav-item nav-link" href="projects.html">Projects</a>
+                    <a class="nav-item nav-link" href="cv.html">CV</a>
+                    <a class="nav-item nav-link" href="favorites.html">Favorites<span class="sr-only">(current)</span></a>
+                    <!-- Social Media Links -->
+                    <a class="nav-link" href="https://linkedin.com/in/peter-john-schmidt"> <img src="images/LI-IN-Bug.png" height="24" /></a>
+                    <a class="nav-link" href="#"> <img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" height="24" /></a>
+                    <a class="nav-link" href="https://github.com/peter-j-schmidt"> <img src="images/Github-Mark-Light-64px.png" height="24" /></a>
+                    <a class="nav-link" href="https://www.youtube.com/channel/UC_bUdqnlOkrA_PbBHdYs6gQ?view_as=subscriber"> <img src="images/youtube_social_icon_red.png" height="24" /></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Webpage content -->
+    <div>
+        <h1>
+            Favorites
+        </h1>
+    </div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Aviation</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Programming</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Music</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="aviation-tab">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Website</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Social Media</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a class="nav-link" href="https://aopa.org/"> <img src="images/AOPA Logo_Primary.png" height="24" /></a></th>
+                        <td>Aircraft Owners and Pilots Association</td>
+                        <td>An organization that advocates for general aviation.</td>
+                        <td>
+                            <div class="d-flex flex-wrap">
+                                <a class="nav-link" href="https://twitter.com/AOPA"><img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.facebook.com/AOPApilots"><img src="images/f_logo_RGB-Blue_144.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.instagram.com/flywithaopa/"><img src="images/IG_Glyph_Fill.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.youtube.com/AOPALive"> <img src="images/youtube_social_icon_red.png" height="24" /></a>
+                                <a class="nav-link" href="#"> <img src="images/images/LI-IN-Bug.png" height="24" /></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a class="nav-link" href="https://eaa.org/eaa"> <img src="images/EAA_logo_blue-png.png" height="24" /></a></th>
+                        <td>Experimental Aircraft Association</td>
+                        <td>An organization dedicated to supporting homebuilders and pilots.</td>
+                        <td>
+                            <div class="d-flex flex-wrap">
+                                <a class="nav-link" href="https://twitter.com/EAA"><img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.facebook.com/EAA"><img src="images/f_logo_RGB-Blue_144.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.instagram.com/eaa/"><img src="images/IG_Glyph_Fill.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.youtube.com/eaa"> <img src="images/youtube_social_icon_red.png" height="24" /></a>
+                                <a class="nav-link" href="#"> <img src="images/images/LI-IN-Bug.png" height="24" /></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a class="nav-link" href="https://www.eaa.org/eaa/youth/free-ye-flights"> <img src="images/YE_logo_color-png.png" height="24" /></a></th>
+                        <td>Young Eagles</td>
+                        <td>A division of the EAA that promotes aviation and STEAM to young people.</td>
+                        <td>
+                            <div class="d-flex flex-wrap">
+                                <a class="nav-link" href="https://www.facebook.com/EAAYoungEagles"><img src="images/f_logo_RGB-Blue_144.png" height="24" /></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="programming-tab">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Website</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Social Media</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a class="nav-link" href="https://leetcode.com/"> <img src="images/leetcode-logo-dark.svg" height="24" /></a></th>
+                        <td>Leetcode</td>
+                        <td>A great website to learn algorithms and datastructures and to practice for interviews.</td>
+                        <td>
+                            <div class="d-flex flex-wrap">
+                                <a class="nav-link" href="https://twitter.com/leetcode?lang=en"><img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.facebook.com/LeetCode/"><img src="images/f_logo_RGB-Blue_144.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.instagram.com/official_leetcode/"><img src="images/IG_Glyph_Fill.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.linkedin.com/company/leet-code/"> <img src="images/images/LI-IN-Bug.png" height="24" /></a>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row"><a class="nav-link" href="https://www.edx.org/"> <img src="images/edx-logo-header.png" height="24" /></a></th>
+                        <td>EdX</td>
+                        <td>A website hosting MOOCs in various topics, as well as accredited degree programs.</td>
+                        <td>
+                            <div class="d-flex flex-wrap">
+                                <a class="nav-link" href="https://twitter.com/edXOnline"><img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.facebook.com/edX"><img src="images/f_logo_RGB-Blue_144.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.instagram.com/edxonline/"><img src="images/IG_Glyph_Fill.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.youtube.com/user/EdXOnline"> <img src="images/youtube_social_icon_red.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.linkedin.com/school/edx/"> <img src="images/images/LI-IN-Bug.png" height="24" /></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a class="nav-link" href="https://www.coursera.org/"> <img src="images/coursera-logo.svg" height="24" /></a></th>
+                        <td>Coursera</td>
+                        <td>Similar to EdX, this site is dedicated to providing MOOCs and accredited degree programs online.</td>
+                        <td>
+                            <div class="d-flex flex-wrap">
+                                <a class="nav-link" href="https://twitter.com/coursera"><img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.facebook.com/Coursera"><img src="images/f_logo_RGB-Blue_144.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.instagram.com/coursera/"><img src="images/IG_Glyph_Fill.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.youtube.com/user/coursera"> <img src="images/youtube_social_icon_red.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.linkedin.com/company/coursera/"> <img src="images/images/LI-IN-Bug.png" height="24" /></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="music-tab">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Website</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Social Media</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a class="nav-link" href="https://fender.com/play"> <img src="images/fender-play.png" height="24" /></a></th>
+                        <td>Fender Play</td>
+                        <td>A website devoted to teaching guitar. I personally use this to improve my chops.</td>
+                        <td>
+                            <div class="d-flex flex-wrap">
+                                <a class="nav-link" href="https://twitter.com/fender"><img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.facebook.com/Fender/"><img src="images/f_logo_RGB-Blue_144.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.instagram.com/fender/"><img src="images/IG_Glyph_Fill.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.youtube.com/user/fendermusical"> <img src="images/youtube_social_icon_red.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.linkedin.com/company/fender-musical-instruments"> <img src="images/images/LI-IN-Bug.png" height="24" /></a>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row"><a class="nav-link" href="https://www.songsterr.com/"> <img src="images/songsterr-logo.jpg" height="24" /></a></th>
+                        <td>Songsterr</td>
+                        <td>A website that stores user-submitted tabs for guitar players.</td>
+                        <td>
+                            <div class="d-flex flex-wrap">
+                                <a class="nav-link" href="https://twitter.com/songsterr?lang=en"><img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" height="24" /></a>
+                                <a class="nav-link" href="https://www.facebook.com/songsterr/"><img src="images/f_logo_RGB-Blue_144.png" height="24" /></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="footer">Designed by Peter Schmidt for CS50 Web Programming 2020.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
